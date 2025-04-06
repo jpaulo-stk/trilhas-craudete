@@ -10,8 +10,18 @@ export function Contador({ valorInicial }: ContadorProps) {
   return (
     <div>
       <h2>Contador: {contador}</h2>
-      <button onClick={() => setContador(contador - 1)}>-</button>
-      <button onClick={() => setContador(contador + 1)}>+</button>
+      <button
+        className="border-2 px-2 bg-blue"
+        onClick={() => setContador(contador - 1)}
+      >
+        -
+      </button>
+      <button
+        className="border-2 px-2 bg-blue"
+        onClick={() => setContador(contador + 1)}
+      >
+        +
+      </button>
     </div>
   );
 }
